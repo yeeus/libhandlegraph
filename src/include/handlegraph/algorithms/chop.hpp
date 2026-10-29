@@ -41,6 +41,9 @@ void chop(MutablePathDeletableHandleGraph& graph, size_t max_node_length, const 
  */
 void unchop(MutablePathDeletableHandleGraph& graph);
 
+/** Unchop with parallel read-only neighbor analysis; graph edits remain serial. */
+void unchop(MutablePathDeletableHandleGraph& graph, size_t num_threads);
+
 }
 }
 
